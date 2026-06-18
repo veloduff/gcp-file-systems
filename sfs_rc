@@ -1,0 +1,34 @@
+##############################################################################
+#       sfs_rc
+##############################################################################
+
+USER=admin_mduffield_altostrat_com
+CLIENT_MOUNTPOINTS=hosts.1
+EXEC_PATH=/mnt/disks/local-ssd/SPEC/binaries/linux/x86_64/netmist
+NETMIST_LICENSE_KEY=9076
+NETMIST_LICENSE_KEY_PATH=/tmp/netmist_license_key
+
+BENCHMARK=EDA_BLENDED
+LOAD=100
+INCR_LOAD=50
+NUM_RUNS=10
+
+IPV6_ENABLE=0
+PRIME_MON_SCRIPT=
+PRIME_MON_ARGS=
+NETMIST_LOGS=
+NETMIST_WINDOWS_LOGS=
+
+##############################################################################
+#  DO NOT EDIT BELOW THIS LINE FOR AN OFFICIAL BENCHMARK SUBMISSION
+##############################################################################
+MAX_FD=
+LOCAL_ONLY=0
+FILE_ACCESS_LIST=0
+PDSM_MODE=
+PDSM_INTERVAL=
+UNIX_PDSM_LOG=
+WINDOWS_PDSM_LOG=
+UNIX_PDSM_CONTROL=
+WINDOWS_PDSM_CONTROL=
+
