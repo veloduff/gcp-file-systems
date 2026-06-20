@@ -549,18 +549,24 @@ If you re-run:
     ```bash
     pdsh -w ^/home/hpcuser/hostfile "sudo sync && sudo sh -c 'echo 3 > /proc/sys/vm/drop_caches'"
     ```
-2.  Create new test directory 
+1.  Create new test directory 
     ```bash
     mkdir /mnt/filestore-iad-001/test.d/test-002
     ```
-3.  Update the client file with the updated test directory location
+1.  Upadate the `sfs_rc` file, for example change these parameters:
+    ```bash
+    LOAD=100
+    INCR_LOAD=50
+    NUM_RUNS=10
+    ```
+1.  Update the client file with the updated test directory location
     ```bash
     host1 /mnt/filestore-iad-001/test.d/test-002
     host2 /mnt/filestore-iad-001/test.d/test-002
     host3 /mnt/filestore-iad-001/test.d/test-002
     ...
     ```
-4. Start the new test 
+1. Start the new test 
    ```bash
    python3 SM2020 -r sfs_rc -s test-label-002
    ```
